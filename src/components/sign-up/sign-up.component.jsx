@@ -1,6 +1,6 @@
 import React from "react";
 import { auth, createUserProfileDocument } from "../../firebase/firebase.util";
-import { CustomButton } from "../custom-button/custom-button.component";
+import CustomButton from "../custom-button/custom-button.component";
 import { FormInput } from "../form-input/form-inpu.component";
 
 import "./sign-up.component.styles.scss";
