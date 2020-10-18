@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95fc6ebd61c7c80d6c91736e3be45bc8",
+    "revision": "84dc2fde99c2e7e9914f5f62f3a88d06",
     "url": "/aung-than-soe/crown-clothing/index.html"
   },
   {
-    "revision": "1ad983245cdca3fed34e",
+    "revision": "4a5c44900263edff9ef7",
     "url": "/aung-than-soe/crown-clothing/static/css/main.f50947f9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aung-than-soe/crown-clothing/static/js/2.d047c72f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ad983245cdca3fed34e",
-    "url": "/aung-than-soe/crown-clothing/static/js/main.fc7590fd.chunk.js"
+    "revision": "4a5c44900263edff9ef7",
+    "url": "/aung-than-soe/crown-clothing/static/js/main.8a97d305.chunk.js"
   },
   {
     "revision": "92e52060e8745461f449",

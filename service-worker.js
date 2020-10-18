@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/aung-than-soe/crown-clothing/precache-manifest.4ac06f323881f8693ca7bf8703198b0e.js"
+  "/aung-than-soe/crown-clothing/precache-manifest.7e04d9172a6e00a06d2ec2211eaf23cc.js"
 );
 
 self.addEventListener('message', (event) => {
