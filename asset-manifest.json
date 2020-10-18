@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/aung-than-soe/crown-clothing/static/css/main.f50947f9.chunk.css",
+    "main.js": "/aung-than-soe/crown-clothing/static/js/main.fc7590fd.chunk.js",
+    "main.js.map": "/aung-than-soe/crown-clothing/static/js/main.fc7590fd.chunk.js.map",
+    "runtime-main.js": "/aung-than-soe/crown-clothing/static/js/runtime-main.14163124.js",
+    "runtime-main.js.map": "/aung-than-soe/crown-clothing/static/js/runtime-main.14163124.js.map",
+    "static/js/2.d047c72f.chunk.js": "/aung-than-soe/crown-clothing/static/js/2.d047c72f.chunk.js",
+    "static/js/2.d047c72f.chunk.js.map": "/aung-than-soe/crown-clothing/static/js/2.d047c72f.chunk.js.map",
+    "index.html": "/aung-than-soe/crown-clothing/index.html",
+    "precache-manifest.4ac06f323881f8693ca7bf8703198b0e.js": "/aung-than-soe/crown-clothing/precache-manifest.4ac06f323881f8693ca7bf8703198b0e.js",
+    "service-worker.js": "/aung-than-soe/crown-clothing/service-worker.js",
+    "static/css/main.f50947f9.chunk.css.map": "/aung-than-soe/crown-clothing/static/css/main.f50947f9.chunk.css.map",
+    "static/js/2.d047c72f.chunk.js.LICENSE.txt": "/aung-than-soe/crown-clothing/static/js/2.d047c72f.chunk.js.LICENSE.txt",
+    "static/media/crown.ed28accb.svg": "/aung-than-soe/crown-clothing/static/media/crown.ed28accb.svg",
+    "static/media/shopping-bag.30f07071.svg": "/aung-than-soe/crown-clothing/static/media/shopping-bag.30f07071.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14163124.js",
+    "static/js/2.d047c72f.chunk.js",
+    "static/css/main.f50947f9.chunk.css",
+    "static/js/main.fc7590fd.chunk.js"
+  ]
+}
