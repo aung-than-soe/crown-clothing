@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { HomePage } from "./pages/homepage/homepage.component";
@@ -12,6 +12,7 @@ import { selectCurrentUser } from "./redux/user/user.selectors";
 import Header from "./components/header/header.component";
 import ShopPage from "./pages/shop/shop.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
+// import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
 
 class App extends React.Component {
 
@@ -32,6 +33,7 @@ class App extends React.Component {
       }
 
       setCurrentUser(userAuth);
+      // addCollectionAndDocuments('shop_data', collections.map(({title, items}) => ({title, items})));
     })
   }
 
@@ -41,7 +43,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -52,7 +54,7 @@ class App extends React.Component {
           (<Redirect to='/'/>):(<SignInAndSignUpPage />)
             } />
         </Switch>
-      </div>
+      </Fragment>
     );
   }
   }
