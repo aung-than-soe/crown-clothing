@@ -8,9 +8,10 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistor, store } from "./redux/store";
 
 
+const basename = process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_URL;
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={basename}>
       <PersistGate persistor={persistor}>
         <App />
       </PersistGate>
