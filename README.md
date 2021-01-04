@@ -2,7 +2,7 @@
 
 ### Crown Clothing React Sample App for development
 
-##### libs -> [react-redux](https://react-redux.js.org) , [reselect](https://github.com/reduxjs/reselect)
+##### state management -> [react-redux](https://react-redux.js.org) , [reselect](https://github.com/reduxjs/reselect)
 
 ##### middlewares -> [react-thunk](https://github.com/reduxjs/redux-thunk)
 
