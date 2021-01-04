@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CollectionContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const TitleContainer = styled.div`
@@ -12,7 +13,7 @@ export const TitleContainer = styled.div`
 export const ItemsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 1.8rem;
 
   & .collection-item {
     margin-bottom: 30px;

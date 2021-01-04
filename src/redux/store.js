@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux';
-// import logger from 'redux-logger';
+import logger from 'redux-logger';
 import rootReducer from './root-reducer';
 import { persistStore } from 'redux-persist'
 import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction';
@@ -7,7 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProductio
 const middlewares = [];
 
 if(process.env.NODE_ENV === 'development') {
-    // middlewares.push(logger);
+    middlewares.push(logger);
 }
 
 

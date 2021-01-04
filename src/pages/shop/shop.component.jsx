@@ -18,19 +18,16 @@ class ShopPage extends React.Component {
     loading: true,
   };
 
-  unsubscribeFromSnapShot = null;
 
   componentDidMount() {
     const { updateShopData } = this.props;
     const collectionRef = firestore.collection("shop_data");
 
-    this.unsubscribeFromSnapShot = collectionRef.onSnapshot(
-      async (snapShot) => {
-        const shopData = convertCollectionSnapShotToMap(snapShot);
-        updateShopData(shopData);
-        this.setState({ loading: false });
-      }
-    );
+    collectionRef.get().then(snapShot => {
+      const shopData = convertCollectionSnapShotToMap(snapShot);
+      updateShopData(shopData);
+      this.setState({ loading: false });
+    })
   }
 
   render() {
@@ -38,16 +35,8 @@ class ShopPage extends React.Component {
     const { loading } = this.state;
     return (
       <div className="shop-page">
-        <Route
-          exact
-          path={`${match.path}`}
-          render={(props) => (
-            <CollectionOverviewWithSpinner isLoading={loading} {...props} />
-          )}
-        />
-        <Route
-          path={`${match.path}/:collectionId`}
-          render={(props) => (
+        <Route exact path={`${match.path}`} render={(props) => (<CollectionOverviewWithSpinner isLoading={loading} {...props} />)}/>
+        <Route path={`${match.path}/:collectionId`} render={(props) => (
             <CollectionPageWithSpinner isLoading={loading} {...props} />
           )}
         />
@@ -56,8 +45,8 @@ class ShopPage extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  updateShopData: (shopData) => dispatch(updateShopData(shopData)),
+const mapDispatchToProps = dispatch => ({
+  updateShopData: shopData => dispatch(updateShopData(shopData)),
 });
 
 export default connect(null, mapDispatchToProps)(ShopPage);
