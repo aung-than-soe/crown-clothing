@@ -2,7 +2,7 @@
   "name": "crown-clothing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://aung-than-soe.github.io/crown-clothing",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -19,6 +19,7 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "styled-components": "^5.2.1"
